@@ -8,7 +8,7 @@ console.log(inputEl);
 const inputLength = inputEl.getAttribute("data-length");
 console.log(inputLength);
 
-inputEl.addEventListener("input", (event) => {
+inputEl.addEventListener("blur", (event) => {
   if (Number(inputLength) === event.target.value.length) {
     inputEl.classList.add("valid");
     inputEl.classList.remove("invalid");
