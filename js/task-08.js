@@ -9,13 +9,13 @@ console.log(form);
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const { email, password } = event.target.elements;
-  const emeilValue = email.value;
+  const emailValue = email.value;
   const passwordValue = password.value;
-  if (emeilValue === "" || passwordValue === "") {
+  if (emailValue === "" || passwordValue === "") {
     alert("Please fill in all fields");
   } else {
     const formUser = {
-      email: emeilValue,
+      email: emailValue,
       password: passwordValue,
     };
     console.log(formUser);
