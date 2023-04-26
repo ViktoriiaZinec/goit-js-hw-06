@@ -19,7 +19,6 @@ form.addEventListener("submit", (event) => {
       password: passwordValue,
     };
     console.log(formUser);
+    event.target.reset();
   }
-
-  event.target.reset();
 });

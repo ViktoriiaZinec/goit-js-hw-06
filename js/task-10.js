@@ -20,9 +20,10 @@ function createBoxes(amount) {
     const randomColor = getRandomHexColor();
     divRef.style.backgroundColor = randomColor;
     size += 10;
-    boxesRef.prepend(divRef);
+    boxesRef.append(divRef);
   }
 }
+
 btnCreate.addEventListener("click", () => {
   const amount = inputRef.value;
   createBoxes(amount);
